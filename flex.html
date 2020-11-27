@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Animation</title>
+	<style type="text/css">
+		body{box-sizing: border-box;
+		    margin: 0;
+		    padding: 0;}
+		.sky{background: lightblue;
+		    width: 100%;
+		    height: 300px;}
+		 
+		#imgokay{width: 130px;
+		         height: 130px;
+		         position: absolute;}
+
+		 #imgone{width: 130px;
+		         height: 130px;
+                 float: right;
+                 margin-top: 15px;
+                 animation: cloud 35s linear infinite;}
+
+		 #imgtwo{width: 130px;
+		         height: 130px;
+		         margin-top: 70px;
+		         animation: cloudone 35s linear infinite;}
+
+		 .grass img{width: 100%;
+		            height: 150px;
+		            margin-top: -36.9px;
+		            position: absolute;}
+
+		 #house{width: 130px;
+		        height: 150px;
+		        margin-left: 850px;
+		        margin-bottom: 10px;}
+         #house1{width: 250px;
+                 height: 200px;
+                 margin-top: -100px}
+         .road{height: 150px;
+               width: 100%;
+               background-color: dimgrey;
+               border-top:10px solid grey;
+               border-bottom:10px solid grey;
+               box-sizing: border-box;
+               margin-top: 110px;}
+
+         .lines{box-sizing: border-box;
+                border:5px dashed #fff;
+                height: 0px;
+                width: 100%;
+                position: absolute;
+                top: 83%;}
+
+         #girl{width: 100px;
+               height: 100px;
+               position: absolute;
+               margin-top:-50px;
+               animation: girl 11s linear infinite;}
+
+         #boy{width: 100px;
+              height: 100px;
+              margin-top: -50px;
+              float: right;
+              animation: boy 15s linear infinite;}
+
+         #car{width: 155px;
+              height: 130px;
+              position: absolute;
+              margin-top: -70px;
+              animation: car 8s linear infinite;}
+
+         #cartwo{width: 155px;
+              height: 130px;
+              float: right;
+              margin-top: -50px;
+              animation: cartwo 9s linear infinite;}     
+
+         #tree{width: 130px;
+               height: 130px;
+               margin-left: 780px;}        
+
+         #treeone{width:150px;
+                  height: 150px;
+                  margin-left: 930px;
+                  margin-top:-50px;}
+
+         #grassokay{width: 50px;
+                    height: 40px;
+                    margin-left: 820px;
+                    margin-top: 60px;}
+
+         #grassokaytwo{width: 50px;
+                       height: 40px;
+                       margin-left: 970px;
+                       margin-top: 65px;}
+
+                @keyframes car{
+                	from{transform: translateX(0);}
+                	to{transform: translateX(100em);}
+                }
+                @keyframes cartwo{
+                 from{transform: translateX(-0) scaleX(-1);}
+                 to{transform: translateX(-100em)scaleX(-1);}
+                }
+                @keyframes girl{
+                 from{transform: translateX(0);}
+                 to{transform: translateX(100em);}
+                }
+                @keyframes boy{
+                 from{transform: translateX(-0) scaleX(-1);}
+                 to{transform: translateX(-100em)scaleX(-1);}
+                }
+
+		        @keyframes cloud{
+			     from{transform:translateX(-0);}
+			     to{transform: translateX(-100em);}
+		        }
+		        @keyframes cloudone{
+			     from{transform:translateX(0);}
+			     to{transform: translateX(100em);}
+		        }
+	</style>
+
+</head>
+<body>
+	<div class="sky">
+		<img src="sun.png" id="imgokay">
+		<img src="cloud.png" id="imgone">
+		<img src="cloud.png" id="imgtwo">
+	</div>
+	<div class="grass">
+		<img src="grass.png">
+		<img src="tree.png" id="tree">
+		<img src="grassokay.png" id="grassokay">
+
+		<img src="house2.png" id="house">
+
+		<img src="tree.png" id="treeone">
+		<img src="grassokay.png" id="grassokaytwo">
+	</div>
+	<div class="road">
+		<img src="girlridding.png" id="girl">
+		<img src="car.png" id="car">
+    	
+    <div class="lines">
+    	<img src="dadboyridding.png" id="boy">
+    	<img src="car1.png" id="cartwo">
+    </div>
+	</div>
+
+</body>
+</html>
